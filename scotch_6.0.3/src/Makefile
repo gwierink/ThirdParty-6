@@ -112,8 +112,7 @@ ptesmumps			:	ptscotch
 					(cd esmumps ; $(MAKE) ptscotch && $(MAKE) ptinstall)
 
 install				:	required	$(bindir)	$(includedir)	$(libdir)	$(mandir)/man1
-					-$(CP) -f ../bin/[agm]*$(EXE) $(bindir)
-					-$(CP) -f ../bin/d[agm]*$(EXE) $(bindir)
+					-$(CP) -f ../bin/[dagm]*$(EXE) $(bindir)
 					-$(CP) -f ../include/*scotch*.h $(includedir)
 					-$(CP) -f ../lib/*scotch*$(LIB) $(libdir)
 					-$(CP) -Rf ../man/* $(mandir)
